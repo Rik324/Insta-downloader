@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta/TikTok Downloader</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Instagram & TikTok Downloader</h1>
+      <p class="subtitle">Download video/story without watermark (when provider supports it).</p>
+
+      <section class="card">
+        <div class="grid">
+          <label>
+            Platform
+            <select id="platform">
+              <option value="instagram">Instagram</option>
+              <option value="tiktok">TikTok</option>
+            </select>
+          </label>
+
+          <label>
+            Content type
+            <select id="contentType">
+              <option value="video">Video</option>
+              <option value="story">Story</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Paste URL
+          <input id="urlInput" type="url" placeholder="https://..." required />
+        </label>
+
+        <div class="quota" id="quotaText"></div>
+
+        <button id="downloadBtn">Get Download Link</button>
+        <p class="muted">Guest users get 5 free downloads. After that, registration is required.</p>
+
+        <div id="status" class="status"></div>
+      </section>
+
+      <section class="card" id="registerCard" hidden>
+        <h2>Register to continue</h2>
+        <form id="registerForm">
+          <label>
+            Full name
+            <input id="fullName" type="text" required />
+          </label>
+          <label>
+            Email
+            <input id="email" type="email" required />
+          </label>
+          <label>
+            Password
+            <input id="password" type="password" minlength="6" required />
+          </label>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

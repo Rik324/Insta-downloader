@@ -1,0 +1,12 @@
+{
+  "name": "insta-tiktok-downloader",
+  "version": "1.0.0",
+  "description": "Web app for Instagram/TikTok video and story downloads with free guest quota",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
